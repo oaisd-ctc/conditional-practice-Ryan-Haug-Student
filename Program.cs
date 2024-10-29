@@ -5,7 +5,7 @@ public class Program
 {
     public static void Main(string[] args)
     {
-Console.Clear();
+        Console.Clear();
 
         FahrenheitToCelsius(68); // Test FahrenheitToCelsius Function with a random value
 
@@ -41,86 +41,108 @@ Console.Clear();
 
     public static void FahrenheitToCelsius(double fahrenheit)
     {
-        double celsiusDegree = (fahrenheit - 32) * 5/9; 
+        double celsiusDegree = (fahrenheit - 32) * 5 / 9;
         Console.WriteLine($"{fahrenheit} degrees Fahrenheit is {celsiusDegree} degrees Celsius.");
     }
 
     // Define your functions below:
 
-    public static void CheckForPositiveNegativeZero(int number){
-        if(number > 0){
+    public static void CheckForPositiveNegativeZero(int number)
+    {
+        if (number > 0)
+        {
             Console.WriteLine("this number is positive");
         }
-        else if(number == 0){
+        else if (number == 0)
+        {
             Console.WriteLine("this number is zero");
         }
-        else{
+        else
+        {
             Console.WriteLine("this number is negative");
         }
     }
 
-    public static void FindMinimum(int num1, int num2, int num3){
-            if(num1 < num2 && num1 < num3){
-                Console.WriteLine("the minimum is " + num1);
-            }
+    public static void FindMinimum(int num1, int num2, int num3)
+    {
+        if (num1 <= num2 && num1 <= num3)
+        {
+            Console.WriteLine("the minimum is " + num1);
+        }
 
-            else if(num2 < num1 && num2 < num3){
-                Console.WriteLine("the minimum is " + num2);
-            }
+        else if (num2 <= num1 && num2 <= num3)
+        {
+            Console.WriteLine("the minimum is " + num2);
+        }
 
-            else{
-                Console.WriteLine("the minimum is " + num3);
-            }
+        else
+        {
+            Console.WriteLine("the minimum is " + num3);
+        }
     }
 
-    public static void FindMaximum(int num1, int num2, int num3){
-            if(num1 > num2 && num1 > num3){
-                Console.WriteLine("the maximum is " + num1);
-            }
+    public static void FindMaximum(int num1, int num2, int num3)
+    {
+        if (num1 >= num2 && num1 >= num3)
+        {
+            Console.WriteLine("the maximum is " + num1);
+        }
 
-            else if(num2 > num1 && num2 > num3){
-                Console.WriteLine("the maximum is " + num2);
-            }
+        else if (num2 >= num1 && num2 >= num3)
+        {
+            Console.WriteLine("the maximum is " + num2);
+        }
 
-            else{
-                Console.WriteLine("the maximum is " + num3);
-            }
+        else
+        {
+            Console.WriteLine("the maximum is " + num3);
+        }
     }
 
-    public static void IsDivisibleBy5(int number){
-        if((number % 5) == 0){
+    public static void IsDivisibleBy5(int number)
+    {
+        if ((number % 5) == 0)
+        {
             Console.WriteLine(number + " can be divided by 5");
         }
-        else{
+        else
+        {
             Console.WriteLine(number + " cannot be divided by 5");
         }
     }
 
-    public static void CheckEvenOrOdd(int number){
-        if((number % 2) == 0){
+    public static void CheckEvenOrOdd(int number)
+    {
+        if ((number % 2) == 0)
+        {
             Console.WriteLine(number + " is even");
         }
-        else{
+        else
+        {
             Console.WriteLine(number + " is not even");
         }
     }
 
-    public static void CheckVowelOrConsonant(char letter){
-        if("aeiou".Contains(letter) || "AEIOU".Contains(letter)){
+    public static void CheckVowelOrConsonant(char letter)
+    {
+        if ("aeiou".Contains(letter) || "AEIOU".Contains(letter))
+        {
             Console.WriteLine(letter + " is a Vowel");
         }
-        else{
+        else
+        {
             Console.WriteLine(letter + " Is a consonant");
         }
     }
 
-    public static void DisplayDayOfWeek(int dayCode){
-        if(dayCode == 0){Console.WriteLine("Sunday");}
-        if(dayCode == 1){Console.WriteLine("Monday");}
-        if(dayCode == 2){Console.WriteLine("Tuesday");}
-        if(dayCode == 3){Console.WriteLine("Wednesday");}
-        if(dayCode == 4){Console.WriteLine("Thursday");}
-        if(dayCode == 5){Console.WriteLine("Friday");}
-        if(dayCode == 6){Console.WriteLine("Saturday");}
+    public static void DisplayDayOfWeek(int dayCode)
+    {
+        if (dayCode == 0) { Console.WriteLine("Sunday"); }
+        else if (dayCode == 1) { Console.WriteLine("Monday"); }
+        else if (dayCode == 2) { Console.WriteLine("Tuesday"); }
+        else if (dayCode == 3) { Console.WriteLine("Wednesday"); }
+        else if (dayCode == 4) { Console.WriteLine("Thursday"); }
+        else if (dayCode == 5) { Console.WriteLine("Friday"); }
+        else if (dayCode == 6) { Console.WriteLine("Saturday"); }
     }
 }
