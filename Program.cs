@@ -13,13 +13,13 @@ public class Program
         CheckForPositiveNegativeZero(0);
         CheckForPositiveNegativeZero(-1);
 
-        FindMinimum(1, 2, 3);
+        FindMinimum(2, 2, 3);
         FindMinimum(2, 1, 3);
         FindMinimum(3, 2, 1);
 
         FindMaximum(1, 2, 3);
         FindMaximum(2, 1, 3);
-        FindMaximum(3, 2, 1);
+        FindMaximum(2, 2, 1);
 
         IsDivisibleBy5(5);
         IsDivisibleBy5(6);
